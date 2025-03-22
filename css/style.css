@@ -427,7 +427,8 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(var(--green), var(--green)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/wallpaper3.jpg) center center no-repeat;
+
     background-size: cover;
 }
 
