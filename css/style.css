@@ -393,6 +393,12 @@
     opacity: 1;
 }
 
+/*** Dinner ***/
+
+
+#dinner{
+    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
+}
 
 /*** Store ***/
 .store-item .store-overlay {
