@@ -215,6 +215,16 @@
 }
 
 
+#localanddate img {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    #localanddate img{
+        height: 100%;
+    }
+}
+
 /*** Section Title ***/
 .section-title {
     position: relative;
