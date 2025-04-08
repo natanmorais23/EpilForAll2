@@ -265,8 +265,8 @@
 
 /*** Products ***/
 .product {
-    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
-    background-size: auto;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url(../img/product-bg4.jpg) left center no-repeat;
+    background-size: cover;
 }
 
 .product-item img {
@@ -407,7 +407,8 @@
 
 
 #dinner{
-    background: linear-gradient(rgba(136, 180, 78, .1), rgba(136, 180, 78, .1)), url(../img/product-bg.png) left bottom no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)), url(../img/product-bg4.jpg) left center no-repeat;
+    background-size: cover;
 }
 
 /*** Store ***/
