@@ -262,6 +262,20 @@
     left: calc(50% - 13px);
 }
 
+.store-item {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .store-item {
+        margin-bottom: 2rem;
+    }
+}
+
 
 /*** Products ***/
 .product {

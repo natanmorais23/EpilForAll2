@@ -301,7 +301,7 @@
 
 
     <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modal-video fade" style="width: 100%" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -323,11 +323,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        const videoModal = document.getElementById('videoModal');
+        const video = document.getElementById('video');
+    
+        videoModal.addEventListener('hidden.bs.modal', function () {
+            video.pause();
+            video.currentTime = 0; // opcional: reinicia o vídeo
+        });
+    </script>
+    
     <!-- Video Modal End -->
 
     <!-- Dinner Start -->
-    <div class="py-5" id="dinner">
-        <div class="container w-[85%]">
+    <div class="container-xxl py-5" id="dinner">
+        <div class="container w-[80%]">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="section-title">
