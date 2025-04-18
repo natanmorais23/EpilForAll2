@@ -313,7 +313,7 @@
                     <div class="ratio ratio-4x3">
                         <!-- <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
                             allow="autoplay"></iframe> -->
-                            <video id="video" controls autoplay style="width: 100%; height: 100%;">
+                            <video id="video" controls style="width: 100%; height: 100%;">
                                 <source src="/img/video.mp4" type="video/mp4">
                                 Seu navegador não suporta a tag de vídeo.
                             </video>
@@ -369,7 +369,10 @@
                             <h4 class="text-primary">R$ 1.000,00</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="https://link.ton.com.br/?id=5bc26f24-07d1-4196-a114-dddb7ff41218" class="btn btn-dark rounded-pill py-2 px-4 m-2">Comprar <i class="fa fa-cart-plus ms-2"></i></a>
+                            <button class="btn btn-dark rounded-pill py-2 px-4 m-2" data-bs-toggle="modal" data-bs-target="#pixModal">
+                                Comprar <i class="fa fa-cart-plus ms-2"></i>
+                            </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -400,6 +403,36 @@
         </div>
     </div>
     <!-- Store End -->
+
+    <!-- Pix Modal Start -->
+    <div class="modal fade" id="pixModal" tabindex="-1" aria-labelledby="pixModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content rounded-3">
+            <div class="modal-header">
+            <h5 class="modal-title" id="pixModalLabel">Pix Parcelado</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body text-center">
+            <p class="mb-3">Copie o código abaixo e cole no seu app bancário para concluir o pagamento via Pix parcelado:</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="pixCode" value="00020101021226860014br.gov.bcb.pix2563pix.parcelado.epilforall.com.br52040000530398654071000.005802BR5920Epil For All LTDA6009Sao Paulo62100506PIX01" readonly>
+                <button class="btn btn-outline-primary" type="button" onclick="copyPixCode()">Copiar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Pix Modal End -->
+  
+    <script>
+    function copyPixCode() {
+        const pixInput = document.getElementById("pixCode");
+        pixInput.select();
+        pixInput.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+    }
+    </script>
+  
 
 
     <!-- Testimonial Start -->
